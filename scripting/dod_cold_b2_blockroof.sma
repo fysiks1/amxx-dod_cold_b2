@@ -12,14 +12,14 @@ public plugin_precache()
 
 public plugin_init()
 {
-	register_plugin("dod_cold_b2 block roof access", "1.0", "Fysiks")
+	register_plugin("dod_cold_b2 block roof access", "1.1", "Fysiks")
 
 	// Allies side
 	create_wall(Float:{-735.5, 2384.0, 75.0}, Float:{-50.0, -1.0, -100.0}, Float:{50.0, 1.0, 100.0})
 	create_wall(Float:{-800.0, 2343.5, 75.0}, Float:{-1.0, -25.0, -100.0}, Float:{1.0, 25.0, 100.0})
 
 	// Axis side
-	create_wall(Float:{-1267.0, -2304.0, 43.0}, Float:{-5.0, -55.0, -50.0}, Float:{5.0, 150.0, 75.0})
+	create_wall(Float:{-1267.0, -2304.0, 43.0}, Float:{-5.0, -55.0, -50.0}, Float:{5.0, 150.0, 100.0})
 }
 
 stock create_wall(Float:fvOrigin[3], Float:mins[3], Float:maxs[3])
